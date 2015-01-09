@@ -1,0 +1,20 @@
+#!/bin/bash
+
+function MkDir {
+	echo " mkdir :: $1"
+	mkdir -p $1
+}
+
+function Copy {	
+	echo "  copy :: $1 to $2"
+	cp $1 $2
+}
+
+# Create necessary directories
+MkDir ~/share/config/vim
+MkDir ~/share/config/vim/colors
+
+# Copy interesting VIM Files
+Copy ~/.vimrc ~/share/config/vim/
+Copy ~/.vim/colors/jellybeans.vim ~/share/config/vim/colors/
+
