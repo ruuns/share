@@ -13,8 +13,15 @@ function Copy {
 # Create necessary directories
 MkDir ~/share/config/vim
 MkDir ~/share/config/vim/colors
+MkDir ~/share/config/i3
 
 # Copy interesting VIM Files
 Copy ~/.vimrc ~/share/config/vim/
+
 Copy ~/.vim/colors/jellybeans.vim ~/share/config/vim/colors/
+Copy ~/.vim/colors/freya.vim ~/share/config/vim/colors/
+
+Copy ~/.i3/config ~/share/config/i3/
+Copy ~/.i3/status ~/share/config/i3/
+Copy ~/.i3/autostart ~/share/config/i3/
 

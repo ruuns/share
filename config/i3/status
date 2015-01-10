@@ -1,0 +1,25 @@
+general {
+	colors = true
+	color_good = "#D1A75F"
+	color_degraded = "#FF0000"
+	color_bad = "#FFFF00"
+	output_format = i3bar
+	interval = 1
+}
+
+order += "disk /"
+order += "disk /home"
+order += "tztime berlin"
+
+disk "/" {
+	format = "/ %free"
+}
+
+disk "/home" {
+	format = "/home %free"
+}
+
+tztime berlin {
+	format = "%Y-%m-%d %H:%M"
+	timezone = "Europe/Berlin"
+}
