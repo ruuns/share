@@ -37,9 +37,11 @@ au FileType python sw=4 sts=4 expandtab
 
 " define specific colorscheme
 set background=dark
-colorscheme gardener
+colorscheme freya
 
 " enable explicitly syntax highlighting
 syntax on
 
+let hs_highlight_delimiters=1
+let hs_highlight_types=1
 
